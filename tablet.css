@@ -1,0 +1,22 @@
+section .program{
+    width: 100%;
+    margin: auto;
+  }
+  .program .swiper-wrapper{
+    width: 100%;
+    display: flex;
+  }
+  .program .swiper-slide{
+    width: calc((100% - 10px) / 2);
+    margin-right: 10px;
+  }
+  .program .swiper-slide a{
+    width: 100%;
+    display: block;
+  }
+  .program .swiper-slide a img{
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid var(--basicColor);
+    box-sizing: border-box;
+  }

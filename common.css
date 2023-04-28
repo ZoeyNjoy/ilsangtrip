@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --mainFont:'IBM Plex Sans KR', sans-serif;
+    --basicColor:#000;
+    --footColor:#38603e;
+}
+*{
+    margin: 0;
+    padding: 0;
+	font: inherit;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html, body{
+    font-size: 1rem;
+    overflow-x: hidden;
+}
