@@ -116,7 +116,7 @@ main .m_slide{
 /* 섹션 웰메이트 프로그램 */
 main section{
   width: 100%;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 main section h1{
   text-align: center;
@@ -124,7 +124,7 @@ main section h1{
 }
 section p{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 section .program{
   max-width: 1400px;
