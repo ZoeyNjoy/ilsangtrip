@@ -85,8 +85,12 @@
         e.forEach((fade)=>{
           if(fade.isIntersecting){
             fade.target.style.opacity=1;
-            fade.target.style.animation='fade .5s';
+            fade.target.style.animation='fade1 .5s';
           }
+          // else{
+          //   fade.target.style.opacity=0;
+          //   fade.target.style.animation='fade2 .5s';
+          // }
         })
       })
       

@@ -1,3 +1,22 @@
+/* 위젯 */
+.widget{
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+}
+.widget a{
+  width:140px;
+  transform: translateX(95px);
+  display: block;
+  margin-bottom: 5px;
+}
+.widget a img{
+  width: 100%;
+}
+.widget a:hover{
+  transform: translateX(0px);
+  transition: all .5s;
+}
 /* 헤더 */
 header{
     width: 100%;
@@ -8,7 +27,7 @@ header{
     top: 0;
     left: 0;
     z-index: 10;
-    font: 300 1.1rem var(--mainFont);
+    font: 300 1.2rem var(--mainFont);
     margin: auto;
     background-color: #fff;
 }
@@ -52,7 +71,8 @@ header .lnb{
 .lnb ul{
   display: flex;
   margin-right: 30px;
-  font: 300 .9rem var(--mainFont);
+  font: 300 1rem var(--mainFont);
+  letter-spacing: -1px;
 }
 .lnb li{
   line-height: 30px;
@@ -123,8 +143,11 @@ main section h1{
   font: 500 1.8rem var(--mainFont);
 }
 section p{
+  height: 40px;
   text-align: center;
   margin-bottom: 80px;
+  font: 300 1.1rem/40px var(--mainFont);
+  word-spacing:10px;
 }
 section .program{
   max-width: 1400px;
@@ -312,9 +335,15 @@ footer .foot{
   transition: all 1s;
 }
 
-@keyframes fade{
+@keyframes fade1{
   0%{transform: translateY(200px);
   }
   100%{transform: translateY(0);
+  }
+}
+@keyframes fade2{
+  0%{transform: translateY(0);
+  }
+  100%{transform: translateY(200px);
   }
 }

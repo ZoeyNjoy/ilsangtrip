@@ -18,6 +18,6 @@ a{
     color: inherit;
 }
 html, body{
-    font-size: 1rem;
+    font-size: 1vw;
     overflow-x: hidden;
 }
