@@ -387,6 +387,8 @@ footer .foot{
 }
 .foot .logo{
   width: 150px;
+  padding-top: 15px;
+  box-sizing: border-box;
 }
 .foot .logo img{
   width: 100%;

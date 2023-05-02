@@ -102,16 +102,18 @@ header{
       margin-top: 100px;
       width: 100%;
     }
-    
     /* 푸터 */
-    .cont .wrap{
-      width: 100%;
-    }
-    .cont .wrap .small{
-      font-size: 1.3rem;
-    }
-    .cont .copy{
-      margin-top: 0px;
-    }
-    
-    
+  .cont .wrap{
+    width: 100%;
+  }
+  .foot .cont{
+    font: 300 1.5rem/30px var(--mainFont);
+  }
+  .cont .wrap .small{
+    font-size: 1.3rem;
+  }
+  .cont .copy{
+    margin-top: 0px;
+  }
+  
+  

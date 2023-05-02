@@ -107,6 +107,9 @@ header{
   .cont .wrap{
     width: 100%;
   }
+  .foot .cont{
+    font: 300 1.5rem/30px var(--mainFont);
+  }
   .cont .wrap .small{
     font-size: 1.3rem;
   }
