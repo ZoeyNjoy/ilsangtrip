@@ -81,10 +81,6 @@ const program = new Swiper("main section .program", {
   },
   loop: true,
 speed : 300,
-  // autoplay: {
-  //     delay: 300,
-  //     disableOnInteraction: false,
-  // },
 });
 
 
@@ -114,7 +110,7 @@ const instslide = new Swiper("main section .instslide", {
     prevEl: ".swiper-button-prev",
   },
   loop: true,
-  speed : 3000,
+  speed : 1000,
   autoplay: {
       delay: 2000,
       disableOnInteraction: false,
