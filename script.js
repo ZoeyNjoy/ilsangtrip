@@ -3,7 +3,7 @@
 // 탑버튼
 $('.top').on('click', function (e) {
   e.preventDefault();
-  $('html, body').animate({ scrollTop: 0 }, 800);
+  $('html, body').animate({ scrollTop: 0 }, 500);
 });
 
 

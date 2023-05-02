@@ -1,3 +1,8 @@
+html, body{
+  font-size: 1vw;
+  overflow-x: hidden;
+}
+
 /* 위젯 */
 .widget{
   position: fixed;
