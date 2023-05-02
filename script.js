@@ -116,20 +116,19 @@ const instslide = new Swiper("main section .instslide", {
       disableOnInteraction: false,
   },
 });
- 
+
+// 메인 스크롤이벤트
 let observer = new IntersectionObserver((e)=>{
   e.forEach((fade)=>{
     if(fade.isIntersecting){
       fade.target.style.opacity=1;
       fade.target.style.animation='fade1 .5s';
     }
-    // else{
-    //   fade.target.style.opacity=0;
-    //   fade.target.style.animation='fade2 .5s';
-    // }
   })
 })
  
 let fade = document.querySelectorAll('.fade')
 observer.observe(fade[0])
 observer.observe(fade[1])
+
+

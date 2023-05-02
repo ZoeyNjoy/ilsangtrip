@@ -153,11 +153,29 @@ section .instslide{
   transition: all .3s;
 }
 
+/* 메인 스크롤  */
+@keyframes fade1{
+  0%{transform: translateY(200px);
+  }
+  100%{transform: translateY(0);
+  }
+}
+@keyframes fade2{
+  0%{transform: translateY(0);
+  }
+  100%{transform: translateY(200px);
+  }
+}
+
+
 
 /* 서브페이지 */
 main .section{
   width: 100%;
   display: flex;
+}
+main .m_sect{
+  display: none;
 }
 main .section:not(first-child){
   margin-top: 100px;
@@ -200,11 +218,22 @@ main .section:not(first-child){
   font: 400 1.7rem/2.3rem var(--mainFont);
   text-align: center;
 }
-.item p:nth-of-type(1){
+.item .color{
+  width: 40%;
+  height: 6px;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
+}
+.item:nth-of-type(1) .color{
+  background-color: var(--item1);
+}
+.item:nth-of-type(2) .color{
+  background-color: var(--item2);
+}
+.item:nth-of-type(3) .color{
+  background-color: var(--item3);
 }
 .item p:nth-of-type(2){
   width: 80%;
@@ -212,19 +241,4 @@ main .section:not(first-child){
   text-align: center;
   font: 300 1.3rem/2rem var(--mainFont);
   margin-top: 30px;
-}
-.item:nth-of-type(1) .color{
-  width: 60px;
-  height: 6px;
-  background-color: var(--item1);
-}
-.item:nth-of-type(2) .color{
-  width: 60px;
-  height: 6px;
-  background-color: var(--item2);
-}
-.item:nth-of-type(3) .color{
-  width: 60px;
-  height: 6px;
-  background-color: var(--item3);
 }
