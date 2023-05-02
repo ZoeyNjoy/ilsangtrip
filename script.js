@@ -66,11 +66,11 @@ const program = new Swiper("main section .program", {
     },
     640: {
       slidesPerView: 1,
-      spaceBetween: 0
+      spaceBetween: 10
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: 0
+      spaceBetween: 10
     },
   },
   slidesPerGroup: 1,
@@ -100,11 +100,11 @@ const instslide = new Swiper("main section .instslide", {
     },
     640: {
       slidesPerView: 1,
-      spaceBetween: 0
+      spaceBetween: 10
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: 0
+      spaceBetween: 10
     },
   },
   slidesPerGroup: 1,
