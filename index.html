@@ -7,7 +7,6 @@
     <title>일상과 여행 사이 | 나를 발견하는 일상 탐험</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./anime.js"></script>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./common.css">
@@ -19,7 +18,12 @@
     <div class="widget">
       <a href="#"><img src="./images/ins.png" alt="인스타바로가기"></a>
       <a href="#"><img src="./images/kakao.png" alt="카톡상담바로가기"></a>
-      <a href="#"><img src="./images/top_l.png" alt="상단으로"></a>
+      <a href="#" class="top"><img src="./images/top_l.png" alt="상단으로"></a>
+    </div>
+    <div class="m_widget">
+      <a href="#"><img src="./images/ins_m.png" alt="인스타바로가기"></a>
+      <a href="#"><img src="./images/kakao_m.png" alt="카톡상담바로가기"></a>
+      <a href="#" class="top"><img src="./images/top.png" alt="상단으로"></a>
     </div>
     <header>
       <nav>
@@ -40,14 +44,30 @@
         <ul>
           <li><a href="#">로그인</a></li>
           <li><a href="#">마이페이지</a></li>
-          <li>
-            <a class="bar" href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
+        </ul>
+      </div>
+      <div class="bar">
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="m_nav">
+        <ul class="depth02">
+          <li>menu</li>
+          <li><a href="#">BRAND</a></li>
+          <li><a href="#">PROGRAM</a></li>
+          <li><a href="#">WELL MATE</a></li>
+          <li><a href="#">WELLNESS ITEM</a></li>
+          <li><a href="#">LOGIN</a></li>
+          <li class="not">
+            <p><span>work hour</span><br>
+              MON - FRI 09:30 - 17:30<br>
+              LUNCH 12:00 - 13:00<br>
+              토요일/일요일/공휴일 휴무</p>
           </li>
         </ul>
       </div>
