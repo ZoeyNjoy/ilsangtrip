@@ -36,14 +36,14 @@ header{
 
   /* 햄버거메뉴클릭시 나오는 메뉴 */
   .depth02 li{
-    font: 200 2rem/6rem var(--mainFont);
+    font: 200 3rem/9rem var(--mainFont);
     text-align: center;
   }
   .not span{
-    font: 200 2rem/6rem var(--mainFont);
+    font: 200 3rem/9rem var(--mainFont);
   }
   .not p{
-    font: 200 2rem/4rem var(--mainFont);
+    font: 200 3rem/5rem var(--mainFont);
   }
 
   /* 메인작업 */
@@ -77,14 +77,14 @@ header{
   
   /* 섹션 웰메이트 프로그램 */
   main section h1{
-    font: 500 2.5rem var(--mainFont);
+    font: 500 4rem var(--mainFont);
   }
   section p{
-    font: 300 1.8rem/5rem var(--mainFont);
+    font: 300 3rem/8rem var(--mainFont);
   }
   .program .swiper-slide a h2{
     margin-top: 10px;
-    font: 400 1.5rem var(--mainFont);
+    font: 400 4rem var(--mainFont);
   }
   
   /* 글자슬라이드 */
@@ -100,14 +100,20 @@ header{
   }
   
   /* 푸터 */
+  .foot .logo{
+    width: 100px;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+
   .cont .wrap{
     width: 100%;
   }
   .foot .cont{
-    font: 300 1.5rem/3rem var(--mainFont);
+    font: 300 2.5rem/5rem var(--mainFont);
   }
   .cont .wrap .small{
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
   .cont .copy{
     margin-top: 0px;

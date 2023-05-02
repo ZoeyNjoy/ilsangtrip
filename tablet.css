@@ -103,6 +103,11 @@ header{
   }
   
   /* 푸터 */
+  .foot .logo{
+    width: 100px;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
   .cont .wrap{
     width: 100%;
   }
