@@ -1,3 +1,8 @@
+html, body{
+  font-size: 2rem;
+  overflow-x: hidden;
+}
+
 /* 위젯 */
 .widget{
   display: none;
@@ -36,14 +41,14 @@ header{
 
   /* 햄버거메뉴클릭시 나오는 메뉴 */
   .depth02 li{
-    font: 200 3rem/9rem var(--mainFont);
+    font: 200 1rem/3rem var(--mainFont);
     text-align: center;
   }
   .not span{
-    font: 200 3rem/9rem var(--mainFont);
+    font: 200 1rem/3rem var(--mainFont);
   }
   .not p{
-    font: 200 3rem/5rem var(--mainFont);
+    font: 200 1rem/1.5rem var(--mainFont);
   }
 
   /* 메인작업 */
@@ -77,19 +82,19 @@ header{
   
   /* 섹션 웰메이트 프로그램 */
   main section h1{
-    font: 500 4rem var(--mainFont);
+    font: 500 1.2rem var(--mainFont);
   }
   section p{
-    font: 300 3rem/8rem var(--mainFont);
+    font: 300 .9rem/2rem var(--mainFont);
   }
   .program .swiper-slide a h2{
     margin-top: 10px;
-    font: 400 4rem var(--mainFont);
+    font: 400 1.1rem var(--mainFont);
   }
   
   /* 글자슬라이드 */
   .alterslide p{
-    font: 400 1.8rem/5rem var(--mainFont);  
+    font: 400 1rem/3rem var(--mainFont);  
   }
   
     
@@ -99,9 +104,14 @@ header{
     width: 100%;
   }
   
+  .waves {
+    height: 5vh;
+    margin-bottom: -20px; /*Fix for safari gap*/
+  }
+
   /* 푸터 */
   .foot .logo{
-    width: 100px;
+    width: 130px;
     padding-top: 30px;
     box-sizing: border-box;
   }
@@ -110,10 +120,10 @@ header{
     width: 100%;
   }
   .foot .cont{
-    font: 300 2.5rem/5rem var(--mainFont);
+    font: 300 .6rem/1.2rem var(--mainFont);
   }
   .cont .wrap .small{
-    font-size: 2rem;
+    font-size: .5rem;
   }
   .cont .copy{
     margin-top: 0px;
