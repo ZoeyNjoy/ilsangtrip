@@ -12,7 +12,7 @@ html, body{
   position: fixed;
   bottom: 50px;
   right: 20px;
-  z-index: 150;
+  z-index: 10;
 }
 .m_widget a{
   width: 60px;
