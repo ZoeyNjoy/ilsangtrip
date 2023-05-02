@@ -39,7 +39,7 @@ header .logo{
 }
 .logo img{
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
   /* 헤더 우측 로그인 및 햄버거메뉴바 */
