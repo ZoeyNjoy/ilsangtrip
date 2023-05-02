@@ -19,10 +19,28 @@
   width: 100%;
 }
 
+/* 헤더 */
+header{
+  height: 100px;
+}
+
 /* 헤더 좌측 메뉴바 */
   header nav{
     display: none;
   }
+
+/* 헤더 메뉴바 옆 로고 */
+header .logo{
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo img{
+  height: 100%;
+  object-fit: contain;
+}
 
   /* 헤더 우측 로그인 및 햄버거메뉴바 */
   .lnb ul{
