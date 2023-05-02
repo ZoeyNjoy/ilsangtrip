@@ -34,6 +34,13 @@ header{
     display: none;
   }
 
+  header .logo{
+    height: 40px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   /* 헤더 우측 로그인 및 햄버거메뉴바 */
   .lnb ul{
     display: none;
