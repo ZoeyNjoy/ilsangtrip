@@ -43,6 +43,7 @@ header{
 
 /* 헤더 좌측 메뉴바 */
 header nav{
+  width: 45%;
   position: absolute;
   top: 50%;
   left: 0;
@@ -51,10 +52,35 @@ header nav{
 nav ul{
   width: 100%;
   display: flex;
-  margin-left: 30px;
+  align-items: center;
 }
 nav li{
-  margin-left: 20px;
+  width: 17.5%;
+  margin-right: 10px;
+  text-align: center;
+}
+nav li:nth-of-type(4){
+  width: 30%;
+  margin-right: 10px;
+  text-align: center;
+}
+nav li a{
+  display: block;
+  width: 100%;
+}
+nav li a .on{
+  display: none;
+}
+nav li:hover a .off{
+  display: none;
+}
+nav li:hover a .on{
+  animation: on .3s linear;
+  display: block;
+}
+@keyframes on{
+  0%{opacity: 0.8;}
+  100%{opacity: 1;}
 }
 
 /* 헤더 메뉴바 옆 로고 */
@@ -89,7 +115,7 @@ header .lnb{
 }
 .lnb li{
   line-height: 30px;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 
