@@ -1,5 +1,5 @@
 html, body{
-  font-size: 2rem;
+  font-size: 1.5rem;
   overflow-x: hidden;
 }
 
@@ -40,6 +40,9 @@ header{
   }
 
   /* 햄버거메뉴클릭시 나오는 메뉴 */
+  .m_nav .depth02{
+    width: 90%;
+  }
   .depth02 li{
     font: 200 1rem/3rem var(--mainFont);
     text-align: center;
