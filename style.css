@@ -59,6 +59,7 @@ header .logo{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 1px solid red;
 }
 header .logo a{
   height: 100%;
@@ -352,8 +353,8 @@ footer{
 .waves {
   position: relative;
   width: 100%;
-  height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
+  height: 20vh;
+  margin-bottom: -10px; /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
 }
@@ -386,7 +387,8 @@ footer .foot{
   box-sizing: border-box;
 }
 .foot .logo{
-  width: 150px;}
+  width: 150px;
+}
 .foot .logo img{
   width: 100%;
   object-fit: cover;
@@ -397,7 +399,7 @@ footer .foot{
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  font: 300 1rem/30px var(--mainFont);
+  font: 300 1rem/40px var(--mainFont);
 }
 .cont .wrap{
   width: 50%;
