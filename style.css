@@ -3,7 +3,7 @@
   position: fixed;
   bottom: 40px;
   right: 10px;
-  z-index: 150;
+  z-index: 50;
 }
 .m_widget{
   display: none;
@@ -31,7 +31,7 @@ header{
     top: 0;
     left: 0;
     z-index: 10;
-    font: 300 1.2rem var(--mainFont);
+    font: 300 1.1rem var(--mainFont);
     margin: auto;
     background-color: #fff;
 }
@@ -148,7 +148,7 @@ header .m_nav{
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 500px;
   height: 100%;
   background-color: #fff;
   padding-top: 80px;
@@ -156,8 +156,7 @@ header .m_nav{
   border-left: 1px solid var(--basicColor);
 }
 .depth02 li{
-  height:60px;
-  font: 200 1.2rem/60px var(--mainFont);
+  font: 200 1.1rem/2.5rem var(--mainFont);
   text-align: center;
 }
 .depth02 li:not(.not){
@@ -184,11 +183,11 @@ header .m_nav{
   transition: all .3s;
 }
 .not span{
-  font: 200 1.2rem/60px var(--mainFont);
+  font: 200 1.1rem/2.5rem var(--mainFont);
 }
 
 .not p{
-  font: 200 1rem/30px var(--mainFont);
+  font: 200 1rem/2rem var(--mainFont);
 }
 
 
@@ -232,13 +231,12 @@ main section{
 }
 main section h1{
   text-align: center;
-  font: 500 1.8rem var(--mainFont);
+  font: 500 1.5rem var(--mainFont);
 }
 section p{
-  height: 40px;
   text-align: center;
   margin-bottom: 80px;
-  font: 300 1.1rem/40px var(--mainFont);
+  font: 300 1.1rem/2.5rem var(--mainFont);
   word-spacing:10px;
 }
 section .program{
@@ -258,7 +256,7 @@ section .program{
 }
 .program .swiper-slide a h2{
   margin-top: 10px;
-  font: 400 1.2rem var(--mainFont);
+  font: 400 1.1rem var(--mainFont);
 }
 .program .swiper-slide a img{
   width: 100%;
@@ -290,7 +288,7 @@ main .alterwrap{
   width: 100%;
   border-top: 1px solid var(--basicColor);
   border-bottom: 1px solid var(--basicColor);
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .alterwrap .alterslide{
   width: 100%;
@@ -298,9 +296,8 @@ main .alterwrap{
   animation:  alterslide 13s infinite linear;
 }
 .alterslide p{
-  height: 70px;
   white-space: nowrap;
-  font: 400 1.3rem/70px var(--mainFont);  
+  font: 400 1.1rem/3rem var(--mainFont);  
 }
 @keyframes alterslide {
   0%{margin-left:1%;}
@@ -400,7 +397,7 @@ footer .foot{
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  font: 300 1rem/40px var(--mainFont);
+  font: 300 1rem/2rem var(--mainFont);
 }
 .cont .wrap{
   width: 50%;

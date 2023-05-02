@@ -39,15 +39,14 @@ header{
 
   /* 햄버거메뉴클릭시 나오는 메뉴 */
   .depth02 li{
-    height:60px;
-    font: 200 1.5rem/60px var(--mainFont);
+    font: 200 1.5rem/5rem var(--mainFont);
     text-align: center;
   }
   .not span{
-    font: 200 1.5rem/60px var(--mainFont);
+    font: 200 1.5rem/5rem var(--mainFont);
   }
   .not p{
-    font: 200 1.5rem/30px var(--mainFont);
+    font: 200 1.5rem/3rem var(--mainFont);
   }
 
   /* 메인작업 */
@@ -84,7 +83,7 @@ header{
     font: 500 2.5rem var(--mainFont);
   }
   section p{
-    font: 300 1.8rem/40px var(--mainFont);
+    font: 300 1.8rem/5rem var(--mainFont);
   }
   .program .swiper-slide a h2{
     margin-top: 10px;
@@ -93,7 +92,7 @@ header{
   
   /* 글자슬라이드 */
   .alterslide p{
-    font: 400 1.8rem/70px var(--mainFont);  
+    font: 400 1.8rem/5rem var(--mainFont);  
   }
   
     
@@ -108,7 +107,7 @@ header{
     width: 100%;
   }
   .foot .cont{
-    font: 300 1.5rem/30px var(--mainFont);
+    font: 300 1.5rem/3rem var(--mainFont);
   }
   .cont .wrap .small{
     font-size: 1.3rem;
