@@ -4,6 +4,9 @@
     --mainFont:'IBM Plex Sans KR', sans-serif;
     --basicColor:#000;
     --footColor:#38603e;
+    --item1:#eda3b0;
+    --item2:#88b1c3;
+    --item3:#e79d6c;
 }
 *{
     margin: 0;
@@ -17,3 +20,321 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+
+/* 위젯 */
+.widget{
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    z-index: 10;
+  }
+  .m_widget{
+    display: none;
+  }
+  .widget a{
+    width:140px;
+    transform: translateX(95px);
+    display: block;
+    margin-bottom: 5px;
+  }
+  .widget a img{
+    width: 100%;
+  }
+  .widget a:hover{
+    transform: translateX(0px);
+    transition: all .5s;
+  }
+  /* 헤더 */
+  header{
+      width: 100%;
+      height: 100px;
+      border-bottom: 1px solid #000;
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      font: 300 1.1rem var(--mainFont);
+      margin: auto;
+      background-color: #fff;
+  }
+  
+  /* 헤더 좌측 메뉴바 */
+  header nav{
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  nav li{
+    width: 17.5%;
+    margin-right: 10px;
+    text-align: center;
+  }
+  nav li:nth-of-type(4){
+    width: 30%;
+    margin-right: 10px;
+    text-align: center;
+  }
+  nav li a{
+    display: block;
+    width: 100%;
+  }
+  nav li a .on{
+    display: none;
+  }
+  nav li:hover a .off{
+    display: none;
+  }
+  nav li:hover a .on{
+    display: block;
+  }
+  
+  
+  /* 헤더 메뉴바 옆 로고 */
+  header .logo{
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .logo a{
+    height: 100%;
+    display: block;
+  }
+  header .logo a img{
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* 헤더 우측 로그인 및 햄버거메뉴바 */
+  header .lnb{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .lnb ul{
+    display: flex;
+    margin-right: 60px;
+    font: 300 1rem var(--mainFont);
+    letter-spacing: -1px;
+  }
+  .lnb li{
+    line-height: 30px;
+    margin-right: 50px;
+  }
+  
+  
+  /* 햄버거메뉴 */
+  header .bar{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 120;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .bar span:nth-child(odd){
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+    transition: all .3s;
+  }
+  .bar span:nth-child(even){
+    display: block;
+    width: 60%;
+    height: 1.5px;
+    margin-left: 40%;
+    background-color: #000;
+    transition: all .3s;
+  }
+  .bar span:not(:last-child){
+    margin-bottom: 5px;
+  }
+  .bar.active-1 span:nth-of-type(1){
+    -webkit-transform: translateY(13px) rotate(-45deg);
+    transform: translateY(13px) rotate(-45deg);
+    transition: all .3s;
+  }
+  .bar.active-1 span:nth-of-type(2),
+  .bar.active-1 span:nth-of-type(3),
+  .bar.active-1 span:nth-of-type(4){
+    opacity: 0;
+  }
+  .bar.active-1 span:nth-of-type(5){
+    -webkit-transform: translateY(-13px) rotate(45deg);
+    transform: translateY(-13px) rotate(45deg);
+    transition: all .3s;
+  }
+  
+  /* 햄버거메뉴클릭시 나오는 메뉴 */
+  header .m_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000050;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .m_nav .depth02{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 80px;
+    box-sizing: border-box;
+    border-left: 1px solid var(--basicColor);
+  }
+  .depth02 li{
+    font: 200 1.1rem/2.5rem var(--mainFont);
+    text-align: center;
+  }
+  .depth02 li:not(.not){
+    border-bottom: 1px solid var(--basicColor);
+  }
+  .depth02 li:nth-of-type(2):hover{
+    background-color: #e7a395;
+    transition: all .3s;
+  }
+  .depth02 li:nth-of-type(3):hover{
+    background-color: #f2b987;
+    transition: all .3s;
+  }
+  .depth02 li:nth-of-type(4):hover{
+    background-color: #ddcde5;
+    transition: all .3s;
+  }
+  .depth02 li:nth-of-type(5):hover{
+    background-color: #77b9b8;
+    transition: all .3s;
+  }
+  .depth02 li:nth-of-type(6):hover{
+    background-color: #8dc18a;
+    transition: all .3s;
+  }
+  .not span{
+    font: 200 1.1rem/2.5rem var(--mainFont);
+  }
+  
+  .not p{
+    font: 200 1rem/2rem var(--mainFont);
+  }
+
+
+
+
+/* 푸터 */
+footer{
+    margin-top: 100px;
+    width: 100%;
+  }
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: -10px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+  /* Animation */
+  .parallax use {
+    animation: move-forever 25s cubic-bezier(0.55,.5,0.45,.5) infinite;
+    animation-duration: 15s;
+  }
+  @keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media(max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+  }
+  
+  /* 푸터 */
+  footer .foot{
+    width: 100%;
+    background: var(--footColor);
+    padding: 0 50px 50px;
+    box-sizing: border-box;
+  }
+  .foot .logo{
+    width: 150px;
+    padding-top: 15px;
+    box-sizing: border-box;
+  }
+  .foot .logo img{
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .foot .cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    font: 300 1rem/2rem var(--mainFont);
+  }
+  .cont .wrap{
+    width: 50%;
+  }
+  .cont .wrap p,
+  .cont .copy{
+    color: #fff;
+  }
+  .cont .wrap span{
+    font-weight: 500;
+  }
+  .cont .wrap .small{
+    font-size: .9rem;
+    font-weight: 200;
+    margin-right: 10px;
+  }
+  .cont .wrap .light{
+    opacity: .3;
+  }
+  .cont .copy{
+    margin-top: 25px;
+  }
+  
+  
+  .fade{
+    opacity: 0;
+    transition: all 1s;
+  }
+  
+  @keyframes fade1{
+    0%{transform: translateY(200px);
+    }
+    100%{transform: translateY(0);
+    }
+  }
+  @keyframes fade2{
+    0%{transform: translateY(0);
+    }
+    100%{transform: translateY(200px);
+    }
+  }
+  

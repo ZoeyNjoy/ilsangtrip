@@ -87,13 +87,13 @@ header{
   }
   
   /* 섹션 웰메이트 프로그램 */
-  main section h1{
+  main section h2{
     font: 500 1.5rem var(--mainFont);
   }
   section p{
     font: 300 1rem/3rem var(--mainFont);
   }
-  .program .swiper-slide a h2{
+  .program .swiper-slide a h3{
     margin-top: 10px;
     font: 400 1.2rem var(--mainFont);
   }

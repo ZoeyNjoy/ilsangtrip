@@ -95,13 +95,13 @@ header{
     padding: 0 15px;
     box-sizing: border-box;
   }
-  main section h1{
+  main section h2{
     font: 500 1.1rem var(--mainFont);
   }
   section p{
     font: 300 .9rem/2rem var(--mainFont);
   }
-  .program .swiper-slide a h2{
+  .program .swiper-slide a h3{
     margin-top: 10px;
     font: 400 .9rem var(--mainFont);
   }
