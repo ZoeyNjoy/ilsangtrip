@@ -85,19 +85,19 @@ header{
   
   /* 섹션 웰메이트 프로그램 */
   main section h1{
-    font: 500 1.2rem var(--mainFont);
+    font: 500 1.1rem var(--mainFont);
   }
   section p{
     font: 300 .9rem/2rem var(--mainFont);
   }
   .program .swiper-slide a h2{
     margin-top: 10px;
-    font: 400 1.1rem var(--mainFont);
+    font: 400 .9rem var(--mainFont);
   }
   
   /* 글자슬라이드 */
   .alterslide p{
-    font: 400 1rem/3rem var(--mainFont);  
+    font: 400 .9rem/3rem var(--mainFont);  
   }
   
     
